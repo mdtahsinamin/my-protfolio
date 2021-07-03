@@ -1,0 +1,12 @@
+
+.details-link:before {
+    z-index: -1;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #303c55;
+    position: relative;
+    right: 0;
+    top: 15px;
+}

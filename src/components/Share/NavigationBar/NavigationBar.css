@@ -1,0 +1,39 @@
+.T-icon{
+    font-size:3em;
+    color:#0e3742;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline:none;
+    animation: animate 5s linear infinite;
+}
+.menu-area a:hover::before{
+    width:100%;
+}
+.menu-area a::before{
+    content: attr(data-text);
+    border-bottom: 1px solid #64ffda;
+    color: #fff;
+    white-space: nowrap;
+    width: 0%;
+    overflow: hidden;
+    padding:10px 0;
+    transition:0.4s;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60.1%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #036cf4,
+                     0 0 20px #036cf4,
+                     0 0 40px #036cf4,
+                     0 0 160px #036cf4;
+    }
+}

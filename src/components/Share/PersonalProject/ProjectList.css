@@ -1,0 +1,133 @@
+.project-info{
+    background-color: rgb(23, 42, 69);
+}
+
+.project-details .project-info h2{
+    position: absolute;
+    top:65px;
+    right:20px;
+    margin:0;
+    padding:0;
+    font-size:7em;
+    color:#1779ff;
+    opacity:.2;
+    transition:0.25s;
+
+}
+.project-details:hover .project-info h2{
+    opacity:.5;
+    top:-10px;
+}
+.project-details .project-info h4{
+    margin:0 0 10px;
+    padding:0;
+    font-size:24px;
+    font-weight:500;
+    color:fff;
+}
+.project-details .project-info a{
+   position: relative;
+   text-decoration: none;
+   display: inline-block;
+   transition:0.5s;
+   transform:translateY(-40px);
+   opacity: 0;
+   visibility: hidden;
+}
+.project-details:hover .project-info a{
+    transform:translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.link-git{
+    font-size:32px;
+    color: aqua;
+}
+.personal-project .project-details{
+    overflow: hidden;
+}
+.personal-project .project-details span{
+     transition:0.5;
+     opacity: 0;
+
+}
+.personal-project .project-details:hover span{
+    opacity: 1;
+
+}
+.personal-project .project-details span:nth-child(1){
+    position:absolute;
+    top:15px;
+    left: 49px;
+    width: 97%;
+    height: 3px;
+    background:linear-gradient(to right,transparent,#1779ff);
+    animation:animate1 2s linear infinite;
+
+}
+@keyframes animate1 {
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+
+.personal-project .project-details span:nth-child(2){
+    position:absolute;
+    top:0;
+    right:15px;
+    width:3px;
+    height: 98%;
+    background:linear-gradient(to bottom,transparent,#1779ff);
+    animation:animate2 2s linear infinite;
+    animation-delay:2s;
+}
+@keyframes animate2 {
+    0%{
+        transform:translateY(-98%);
+    }
+    100%{
+        transform:translateY(98%);
+    }
+}
+
+.personal-project .project-details span:nth-child(3){
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width: 98%;
+    height: 3px;
+    background:linear-gradient(to left,transparent,#1779ff);
+    animation:animate3 2s linear infinite;
+
+}
+@keyframes animate3 {
+    0%{
+        transform:translateX(98%);
+    }
+    100%{
+        transform:translateX(-98%);
+    }
+}
+
+.personal-project .project-details span:nth-child(4){
+    position:absolute;
+    top:0;
+    left:15px;
+    width:3px;
+    height:98%;
+    background:linear-gradient(to top,transparent,#1779ff);
+    animation:animate4 2s linear infinite;
+    animation-delay:2s;
+}
+@keyframes animate4 {
+    0%{
+        transform:translateY(98%);
+    }
+    100%{
+        transform:translateY(-98%);
+    }
+}

@@ -1,0 +1,42 @@
+.about-container{
+    position: relative;
+}
+.particle{
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    top:21px;
+}
+.developerName{
+    font-family:arial;
+    font-size:2em;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    color:transparent;
+    -webkit-text-stroke:1px #03a9f4;
+}
+.page-title:after{
+    content: "";
+    width: 74px;
+    height: 2px;
+    display: block;
+    margin-top: 7px;
+    background-color: #64ffda;
+}
+.technology{
+    display: flex;
+    flex-wrap: wrap;
+}
+.technology span {
+    background: #4b5769;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 3px 10px;
+    font-size: 13px;
+    height: 26px;
+    color: #fff;
+}
+.all-content{
+    overflow: hidden;
+}

@@ -1,0 +1,27 @@
+.social-bar{
+    position: fixed;
+    bottom: -15px;
+    box-sizing: border-box;
+    color: #e6f1ff;
+}
+.social-bar a {
+    color: #ccd6f6;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: all .3s;
+    text-decoration: none;
+    background-color: transparent;
+}
+.social-bar:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #ccd6f6;
+    box-sizing: border-box;
+}
+.social-bar a:hover {
+    transform: translateY(-5px);
+    color: #64ffda;
+}

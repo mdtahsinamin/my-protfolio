@@ -1,0 +1,40 @@
+.blog-container {
+  height: 100vh;
+  overflow: hidden;
+}
+.blog-name {
+  color: #1779ff;
+}
+.blog-container h4 {
+  position: relative;
+  margin: 0;
+  font-size: 4em;
+  font-weight: 900;
+  color: #fff;
+  z-index: 1;
+}
+.blog-container h4:before {
+  content: "";
+  position: absolute;
+  left: 110%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, #0a192f 5%, #0a192f 100%);
+  animation: animate8 5.5s linear forwards;
+}
+.blog-img {
+  height: 100%;
+  width: 100%;
+}
+@keyframes animate8 {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -20%;
+  }
+}
+
+.blog-container span {
+  color: #ff022c;
+}
